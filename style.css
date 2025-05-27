@@ -1,0 +1,261 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+}
+h1{
+    font-size: 96px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    margin-bottom: 0px;
+    text-align: center;
+}
+h2{
+    font-size: 80px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #9F0908;
+    margin-top: 120px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+h3{
+    font-size: 56px;
+    font-family: "Economica", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: black;
+}
+p{
+    margin-top:8px;
+    margin-bottom: 0px;
+}
+.raleway-price-text{
+    font-size: 32px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #675E54
+}
+.raleway-body{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+.hero{
+    background-image: url("./img/1_hero/JPG/hero_bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.menu{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 112px;
+}
+.sakura-logo-img{
+    height:64px;
+    width:64px;
+    padding-left: 100px;
+}
+.phone-img{
+    height: 28px;
+}
+.button-call{
+    background-color: #9D1C1F; /* red */
+    outline-style: solid;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: flex;
+    gap: 5px;
+}
+.button-call:hover{
+    background-color:#ca282b;
+}
+#button-link{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding-right: 100px;
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{      
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.main-title{
+    padding-block-start: 100px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.how-to-order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.incredient-selection{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-block-end: 120px;
+    padding-block-start: 56px;          
+}
+.incredients{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+.order-img{
+    width: 128px;
+}
+.our-menu{
+    background-image:url("img/3_section_our_menu/JPG/section_our_menu_bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    padding-block-end: 120px;
+}
+.dish{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 56px;
+}
+.dish-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+    
+}
+.dish-img{
+    width: 352px;
+    height: 352px;
+    padding-left: 0px;
+    padding-right: 80px;
+}
+.dish-img-reverse{
+    width: 352px;
+    height: 352px;
+    padding-left: 80px;
+    padding-right: 0px;
+}
+table{
+    height: 184px;
+}
+.find-us-at{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.googlemaps{
+    width: 100%;
+    height: 600px;
+    margin-top:64px;
+}
+.location{
+    display: flex;
+}
+footer{
+    background-color: black;
+    height: 144px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sakura-logo-img-footer{
+    height: 44px;
+    padding-left:100px;
+}
+.social-media{
+    height: 40px;;
+    display: flex;
+    gap: 15px;
+    padding-right: 100px;
+}
+@media(max-width: 850px){
+    .hide-mobile{
+        display: none;
+    }
+    .dish-reverse{
+        flex-direction: column;
+        padding-top: 56px;
+    }
+    .dish{
+        flex-direction: column;
+    }
+    .dish-img{
+        padding-right:0px
+    }
+    .dish-img-reverse{
+        padding-left: 0px;
+    }
+}
+@media(max-width: 1000px){
+    .incredient-selection{
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+}
+@media(max-width: 700px){
+    .sakura-logo-img-footer{
+        display: none;
+    }
+    .social-media{
+        padding-right: 0px;
+    }
+    footer{
+        justify-content: center;
+    }
+}
