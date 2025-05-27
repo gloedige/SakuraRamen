@@ -1,0 +1,4 @@
+git init für den start
+git add <file> zum stagen
+git commit -m "your commit message"
+Dies ist eine Änderung.
