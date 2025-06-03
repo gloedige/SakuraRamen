@@ -83,7 +83,7 @@ p{
 .sakura-logo-img{
     height:64px;
     width:64px;
-    padding-left: 100px;
+    padding-left: clamp(20px, 5vw, 100px);
 }
 .phone-img{
     height: 28px;
@@ -107,7 +107,7 @@ p{
 ul{
     list-style-type: none;
     margin: 0;
-    padding-right: 100px;
+    padding-right: clamp(20px, 5vw, 100px);
     width: 540px;
     display: flex;
     justify-content: space-between;
@@ -133,8 +133,8 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: clamp(20px, 5vw, 100px);
+    padding-right: clamp(20px, 5vw, 100px);
 }
 .incredient-selection{
     display: flex;
@@ -165,16 +165,16 @@ a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: clamp(20px, 10vw, 100px);
+    padding-right: clamp(20px, 10vw, 100px);
     padding-top: 56px;
 }
 .dish-reverse{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: clamp(20px, 10vw, 100px);
+    padding-right: clamp(20px, 10vw, 100px);
     
     
 }
@@ -227,6 +227,14 @@ footer{
     .hide-mobile{
         display: none;
     }
+    h1{
+        font-size: 88px;
+    }
+    h2{
+        font-size: 64px;
+    }
+}
+@media(max-width: 1000px){
     .dish-reverse{
         flex-direction: column;
         padding-top: 56px;
@@ -240,8 +248,6 @@ footer{
     .dish-img-reverse{
         padding-left: 0px;
     }
-}
-@media(max-width: 1000px){
     .incredient-selection{
         flex-direction: column;
         align-items: center;
@@ -257,5 +263,35 @@ footer{
     }
     footer{
         justify-content: center;
+    }
+    .raleway-price-text{
+        font-size: 20px;
+    }
+    .dish-img{
+        width: 300px;
+        height: 300px;
+        
+    }
+    .dish-img-reverse{
+        width: 300px;
+        height: 300px;
+    
+    }
+}
+@media(max-width: 450px){
+    .hide-mobile-small{
+        display: none;
+    }
+    h1{
+        font-size: 64px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    p{
+        font-size: 16px;
     }
 }
