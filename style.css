@@ -342,7 +342,7 @@ footer{
     }
     .raleway-price-text{
         font-size: 24px;
-        width: clamp(300px, 80%, 400px);
+        width: 450px;
     }
     .dish-img{
         width: 300px;
