@@ -133,13 +133,13 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: clamp(20px, 5vw, 100px);
-    padding-right: clamp(20px, 5vw, 100px);
+    padding-left: clamp(24px, 1vw, 100px);
+    padding-right: clamp(24px, 1vw, 100px);
 }
 .incredient-selection{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     padding-block-end: 120px;
     padding-block-start: 56px;          
 }
@@ -148,7 +148,7 @@ a:hover{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 200px;
 }
 .order-img{
     width: 128px;
@@ -165,8 +165,8 @@ a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: clamp(20px, 10vw, 100px);
-    padding-right: clamp(20px, 10vw, 100px);
+    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 56px;
 }
 .dish-reverse{
@@ -192,6 +192,7 @@ a:hover{
 }
 table{
     height: 184px;
+    
 }
 .find-us-at{
     display: flex;
@@ -223,7 +224,134 @@ footer{
     gap: 15px;
     padding-right: 100px;
 }
-@media(max-width: 1000px){
+.sakura-logo-img-footer-mobile{
+    display: none;
+}
+@media(max-width: 1100px){
+    
+    .h3-menu{
+        font-size: 40px;
+        text-align: left;
+        white-space: nowrap;
+    }
+    .raleway-price-text{
+        font-size: 24px;
+        
+    }
+    .dish{
+        padding-left: clamp(24px, 5vw, 100px);
+        padding-right: clamp(24px, 5vw, 100px);
+    }
+    .dish-reverse{
+        padding-left: clamp(24px, 5vw, 100px);
+        padding-right: clamp(24px, 5vw, 100px);
+    }
+    .sakura-logo-img-footer-mobile{
+        display: none;
+    }
+}
+@media(max-width: 820px){
+    .hide-mobile{
+        display: none;
+    }
+    h1{
+        font-size: 72px;
+    }
+    h2{
+        font-size: 64px;
+        margin-top: 96px;
+        margin-bottom: 8px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    .h3-menu{
+        font-size: 32px;
+    }
+    .raleway-body{
+        font-size: 20px;
+    }
+    .raleway-price-text{
+        font-size: 24px;
+        flex:1;
+    }
+    .order-img{
+        width: 112px;
+    }
+    .how-to-order{
+    }
+    .incredient-selection{
+        /*justify-content: space-between;
+        width: 80vw;*/
+        padding-block-start: 32px;   
+        padding-block-end: 96px;
+
+    }
+    .incredients{
+        width: 140px;
+    }
+    .dish{
+        padding-top: 40px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .dish-reverse{
+        padding-top: 40px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .dish-img{
+        padding-right: 24px;
+    }
+    .dish-img-reverse{
+        padding-left: 24px;
+    }
+    .price-position-tablet{
+        text-align: right;
+    }
+    .our-menu{
+        padding-block-end: 96px;
+    }
+    .googlemaps{
+        margin-top: 48px;
+    }
+    .sakura-logo-img-footer{
+        padding-left: 24px;
+    }
+    .sakura-logo-img-footer-mobile{
+        display: none;
+    }
+    .social-media{
+        padding-right: 24px;
+    }
+}
+@media(max-width: 700px){
+    h1{
+        font-size: 44px;
+    }
+    .sakura-logo-img-footer-mobile{
+        display: none;
+    }
+    .social-media{
+        padding-right: 0px;
+        height: 32px;
+    }
+    footer{
+        padding: 0px 16px;
+        height: 86px;
+    }
+    .raleway-price-text{
+        font-size: 24px;
+        width: clamp(300px, 80%, 400px);
+    }
+    .dish-img{
+        width: 300px;
+        height: 300px;
+    }
+    .dish-img-reverse{
+        width: 300px;
+        height: 300px;
+    }
     table{
     width: clamp(300px, 50vw, 500px);
     }
@@ -245,61 +373,26 @@ footer{
         align-items: center;
         gap: 32px;
     }
-    .h3-menu{
-        font-size: 48px;
-        text-align: left;
-    }
-}
-@media(max-width: 850px){
-    .hide-mobile{
-        display: none;
-    }
-    h1{
-        font-size: 88px;
-    }
-    h2{
-        font-size: 64px;
-    }
-    h3{
-        font-size: 40px;
-    }
-    .h3-menu{
-        font-size: 40px;
-    }
-}
-@media(max-width: 700px){
     .sakura-logo-img-footer{
         display: none;
     }
-    .social-media{
-        padding-right: 0px;
+    .sakura-logo-img-footer-mobile{
+        display: flex;
+        width: 40px;
+        height: 40px;
     }
-    footer{
-        justify-content: center;
-    }
-    .raleway-price-text{
-        font-size: 20px;
-    }
-    .dish-img{
-        width: 300px;
-        height: 300px;
-        
-    }
-    .dish-img-reverse{
-        width: 300px;
-        height: 300px;
-    
-    }
+
 }
 @media(max-width: 500px){
-    .hide-mobile-small{
-        display: none;
-    }
+    
     h1{
-        font-size: 64px;
+        font-size: 44px;
+        padding: 0px 24px;
     }
     h2{
         font-size: 40px;
+        margin-top: 72px;
+        margin-bottom: 8px;
     }
     h3{
         font-size: 32px;
@@ -310,4 +403,43 @@ footer{
     p{
         font-size: 16px;
     }
+    .raleway-body{
+        font-size: 16px;
+    }
+    .menu{
+        height: 64px;
+    }
+    .sakura-logo-img{
+        width: 40px;
+        height: 40px;
+    }
+    .phone-img{
+        height: 20px;
+    }
+    .button-call{
+        padding: 4px 8px;
+    }
+    .incredient-selection{
+        padding-block-end: 72px;
+    }
+    .our-menu{
+        padding-block-end: 72px;
+    }
+     .dish{
+        padding-top: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .dish-reverse{
+        padding-top: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .raleway-price-text{
+        width: 90vw;
+    }
+    .googlemaps{
+        margin-top: 40px;
+    }
+    
 }
